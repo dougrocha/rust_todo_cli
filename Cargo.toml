@@ -1,0 +1,24 @@
+[package]
+name = "rust_todo_cli"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+crossterm = "0.27.0"
+serde = "1.0.197"
+
+[dependencies.time]
+version = "0.3.34"
+features = ["local-offset"]
+
+[dependencies.rusqlite]
+version = "0.31.0"
+features = ["bundled", "i128_blob", "time"]
+
+[dependencies.clap]
+version = "4.5.2"
+features = ["derive"]
+
+
